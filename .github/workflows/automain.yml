@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: windows-2019
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -29,5 +29,5 @@ jobs:
       - name: install surge
         run: npm install --global surge
       - name: deploying uses surge
-        run: surge ./enchabb21ed-feet.surge.sh --token" 25fbf89bd7e50ff643304875542b76b3"
+        run: surge ./ enchabb21ed-feet.surge.sh --token"25fbf89bd7e50ff643304875542b76b3"
 
